@@ -152,11 +152,11 @@
 					<!-- portfolio filter -->
 					<div class="filter-menu content-box">
 						<div class="filters">
-							<div class="btn-group">
+							<!-- <div class="btn-group">
 								<label data-text="All" class="glitch-effect"><input type="radio" name="fl_radio" value=".box-item" />All</label>
-							</div>
+							</div> -->
 							<div class="btn-group">
-								<label data-text="Image"><input type="radio" name="fl_radio" value=".f-aimage" />Arts</label>
+								<label data-text="Image" class="glitch-effect"><input type="radio" name="fl_radio" value=".f-aimage" />Arts</label>
 							</div>
 							<div class="btn-group">
 								<label data-text="Image"><input type="radio" name="fl_radio" value=".f-bimage" />Posters and Collaterals</label>
@@ -204,24 +204,6 @@
 							</div>
 						</div>
 
-						<div class="box-item f-video">
-							<div class="image">
-								<a href="https://youtu.be/S4L8T2kFFck" class="has-popup-video hover-animated">
-									<img src="images/work2.jpg" class="wp-post-image" alt="" />
-									<span class="info circle">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="icon fas fa-video"></span>
-												<span class="desc">
-													<span class="category">Video</span>
-													<span class="name">Fertility of Some Plants</span>
-												</span>
-											</span>
-										</span>
-									</span>
-								</a>
-							</div>
-						</div>
 
 						<div class="box-item f-simage">
 							<div class="image">
@@ -1183,6 +1165,13 @@
 	</div>
 
 	<!-- Scripts -->
+	<script>
+        // Use JavaScript to trigger a click event on the "Arts" radio button
+        document.addEventListener("DOMContentLoaded", function() {
+            var artsRadioButton = document.querySelector('input[name="fl_radio"][value=".f-aimage"]');
+            artsRadioButton.click();
+        });
+    </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script src="js/magnific-popup.js"></script>
